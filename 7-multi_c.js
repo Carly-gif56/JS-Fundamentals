@@ -1,12 +1,10 @@
-const occurrences = process.argv[2];
-const numOccurrences = Number(occurrences);
+#!/usr/bin/node
+const x = parseInt(process.argv[2]);
 
-if (isNaN(numOccurrences) || numOccurrences < 1) {
-    console.log("Missing number of occurrences");
+if (isNaN(x)) {
+  console.log('Missing number of occurrences');
 } else {
-    let count = 0;
-    while (count < numOccurrences) {
-        count++;
-        console.log("C is fun");
-    }
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
 }
