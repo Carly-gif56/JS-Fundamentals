@@ -2,5 +2,5 @@ const args = process.argv.slice[2];
 if (arg[0]=== undefined) {
   console.log("No argument");
 } else {
-  console.log(args);
+  console.log(args[0]);
 }
